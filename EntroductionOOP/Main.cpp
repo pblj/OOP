@@ -1,4 +1,4 @@
-#pragma warning (disable:4326)
+ï»¿#pragma warning (disable:4326)
 #include<iostream>
 using namespace std;
 
@@ -49,7 +49,7 @@ public:
 		cout << "Destructor:\t\t" << this << endl;
 	}
 
-	//ìåòîäû
+	//Ð¼ÐµÑ‚Ð¾Ð´Ñ‹
 	void Print()const
 	{
 		cout << "X = " << get_x() << "\tY = " << get_y() << endl;
