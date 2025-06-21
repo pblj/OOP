@@ -112,7 +112,10 @@ public:
 		integer++;
 		return old;
 	}
-
+	operator int()const
+	{
+		return integer + numerator / denominator;
+	}
 	//					Methods:
 	Fraction& to_improper()
 	{
@@ -212,6 +215,7 @@ bool operator<=(const Fraction& left, const Fraction& right)
 	//return left < right || left == right;
 }
 
+
 std::ostream& operator<<(std::ostream& os, const Fraction& obj)
 {
 	//os - Output Stream
@@ -284,7 +288,9 @@ std::istream& operator>>(std::istream& cin, Fraction& obj)
 //#define ARITHMETICAL_OPERATORS
 //#define INCREMENT_DECREMENT
 //#define COMPARISON_OPERATORS
-#define ISTREAM_OPERATOR
+//#define ISTREAM_OPERATOR
+//#define CONVERFION_BASIC
+//#define CONVERFION_FROM_OTHERS_TO_CLASS
 
 void main()
 {
@@ -361,5 +367,14 @@ void main()
 	cout << delimiter << endl;
 #endif // ISTREAM_OPERATOR
 
+#ifdef CONVERFION_BASIC
 
+#endif // CONVERFION_BASIC
+
+#ifdef CONVERFION_FROM_OTHERS_TO_CLASS
+
+#endif //CONVERFION_FROM_OTHERS_TO_CLASS
+
+	Fraction A(2, 3, 4);
+	cout << A << endl;
 }

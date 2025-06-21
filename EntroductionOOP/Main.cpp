@@ -216,18 +216,5 @@ void main()
 	C.print();
 #endif // ASSIGNMENT_CHECK
 
-	int a = 2;
-	int b = 3;
-	a + b;
-
-	Point A(2, 3);
-	Point B(4, 5);
-	Point C = A + B;
-	C.print();
-
-	for (Point i(2, 3); i.get_x() < 10; ++i)
-	{
-		i.print();
-	}
-	strtok()
+	
 }
